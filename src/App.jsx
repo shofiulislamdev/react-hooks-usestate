@@ -11,6 +11,14 @@ function App() {
     }
   }
 
+  const handleIncrease = () => {
+    if (demo < 20) {
+      setDemo(demo + 1)
+    } else {
+      setDemo(0)
+    }
+  }
+
 
   return (
     <>
@@ -20,6 +28,8 @@ function App() {
         {demo}
 
         <button onClick={handleDecrement}>Decrement</button>
+
+        <button onClick={handleIncrease}>Increase</button>
 
       </div>
 
